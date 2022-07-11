@@ -1,0 +1,21 @@
+.container{
+   display: grid;
+   border: 1px solid blue;
+   grid-template: repeat(9, 1fr) / repeat(12, 1fr);
+   grid-gap: 2px;
+}
+
+.section{
+   background-color: blueviolet;
+}
+.main-header{
+   grid-column: 1 /-1 ;
+   height: 100vh;
+}
+
+.blog-text{
+   grid-column: 1 / span 6;
+}
+.blog-image{
+   grid-column: 1 / span 6;
+}
