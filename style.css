@@ -1,21 +1,76 @@
+body{
+   margin: 0;
+}
 .container{
    display: grid;
    border: 1px solid blue;
-   grid-template: repeat(9, 1fr) / repeat(12, 1fr);
+   grid-template: repeat(7, 1fr) / repeat(12, 1fr);
    grid-gap: 2px;
 }
 
 .section{
-   background-color: blueviolet;
+   grid-column: 1 /-1 ;
+   height: 100vh;
+   border: 1px solid red;
 }
 .main-header{
    grid-column: 1 /-1 ;
    height: 100vh;
+   background: linear-gradient(to left, rgba(245, 246, 252, 0.1), rgba(0, 0, 0, 0.8)), url(./caw-20220516150420.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .blog-text{
-   grid-column: 1 / span 6;
+   grid-column: 1 / 7;
 }
 .blog-image{
-   grid-column: 1 / span 6;
+   grid-column: 7 / -1;
+}
+
+.menu-list{
+   list-style-type: none;
+   display: flex;
+   justify-content: end;
+}
+.menu-list li a{
+   text-decoration: none;
+   color: white;
+}
+.menu-list li{
+   margin-top: 20px;
+   margin-right: 10px;
+   background-color: black;
+   padding: 5px 15px;
+}
+
+.subnav-content > a{
+   display: block;
+   justify-content: center;
+   align-items: left;
+}
+
+
+
+.header-content{
+   color: white;
+   display: inline-block;
+   margin-left: 5%;
+   margin-right: 50%;   
+   margin-top: 15vh;
+   
+}
+
+.btn{
+   border: none;
+   padding: 10px 15px;
+   background-color: tomato;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.btn a{
+   text-decoration: none;
+   text-transform: uppercase;
+   color: white;
+   font-weight: bold;
 }
