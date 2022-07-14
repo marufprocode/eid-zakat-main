@@ -16,7 +16,7 @@ body{
 .main-header{
    grid-column: 1 /-1 ;
    height: 100vh;
-   background: linear-gradient(to left, rgba(245, 246, 252, 0.1), rgba(0, 0, 0, 0.8)), url(./caw-20220516150420.webp);
+   background: linear-gradient(to left, rgba(245, 246, 252, 0.1), rgba(0, 0, 0, 0.8)), url(./images/cow.jpg);
    background-repeat: no-repeat;
    background-size: cover;
 }
