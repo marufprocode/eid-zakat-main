@@ -1,18 +1,27 @@
 body{
    margin: 0;
    box-sizing: border-box;
+   font-family: 'Play', sans-serif;
 }
 .container{
    display: grid;
    grid-template: repeat(7, 1fr) / repeat(12, 1fr);
-   grid-gap: 2px;
 }
 
 .section{
    grid-column: 1 /-1 ;
    height: 100vh;
    border: 1px solid red;
+   position: relative;
 }
+
+.blog-sec-left{
+   grid-column: 1 / 7;
+}
+.blog-sec-right{
+   grid-column: 7 / -1;
+}
+
 .main-header{
    grid-column: 1 /-1 ;
    height: 100vh;
@@ -65,12 +74,6 @@ nav ul li:hover{
    transition: .3s;
    background-color: gray;
 }
-.blog-text{
-   grid-column: 1 / 7;
-}
-.blog-image{
-   grid-column: 7 / -1;
-}
 
 .header-content{
    color: white;
@@ -94,3 +97,122 @@ nav ul li:hover{
    color: white;
    font-weight: bold;
 }
+
+iframe {
+   display: flex;
+   margin-top: 50vh;
+   transform: translateY(-50%);
+   border-radius: 15px;
+   margin-right: 20px;
+   margin-left: 20px;
+ }
+
+.blog-text{
+   display: flex;
+   position: absolute;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0 15%;   
+   margin-top: 50vh;
+   transform: translateY(-50%);
+}
+
+button{
+   border: none;
+   border-radius: 5px;
+   padding: 10px 15px;
+   background-color: rgb(20, 78, 59);
+   text-transform: uppercase;
+   font-weight: bold;
+   color: white;
+   cursor: pointer;
+}
+
+button:hover{
+   background-color: grey;
+   transition: .3s;
+}
+
+.blog-sec-left > img{
+   display: flex;
+   margin-top: 50vh;
+   transform: translateY(-50%);
+   border-radius: 15px;
+   margin-right: 20px;
+   margin-left: 20px;
+   float: right;
+}
+
+.about-donate-text{
+   padding: 2% 25%;
+   justify-content: center;
+   text-align: center;
+}
+
+
+.flexbox{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 50px;
+   padding: 0 120px;
+   justify-content: center;
+}
+
+.flexbox > div{
+   width: 300px;
+   height: 140px;
+   background-color: aqua;
+   margin: 10px;
+   padding: 10px;
+   border-radius: 5px;
+   display: flex;
+}
+
+.box > img{
+   margin-top: 20px;
+   margin-left: 10px;
+}
+
+.box > p{
+   margin-left: 10px;
+}
+
+.jakat-fund-box{
+   width: 364px;
+   height: 481px;
+   background-color:aliceblue;
+   border-radius: 10px; 
+   position: relative;
+   box-shadow: 2px 5px 6px #888888;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.jakat-box-image{
+   width: 364px;
+   height: 211px;
+   background-image: url(./images/Charity.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.jakat-box-text{
+   padding: 20px;
+}
+
+.jakat-box-text > a{
+   position: absolute;
+   bottom: 40px;
+}
+.jakat-box{
+   display: flex;
+   justify-content: center;
+
+}
+
+.jakat-fund-text{
+   text-align: center;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
