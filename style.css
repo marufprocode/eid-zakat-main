@@ -5,14 +5,22 @@ body{
 }
 .container{
    display: grid;
-   grid-template: repeat(7, 1fr) / repeat(12, 1fr);
+   grid-template: repeat(6, 1fr) / repeat(12, 1fr);
 }
 
 .section{
    grid-column: 1 /-1 ;
    height: 100vh;
-   border: 1px solid red;
    position: relative;
+}
+
+#footer{
+   display: flex;
+   grid-column: 1 /-1 ;
+   height: 30vh;
+   background-color: black;
+   justify-content: center;
+   align-items: center;
 }
 
 .blog-sec-left{
@@ -214,5 +222,31 @@ button:hover{
    text-align: center;
    margin-left: 10%;
    margin-right: 10%;
+}
+
+.motivational-text{
+   margin-top: 60px;
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+.image-box > img{
+   border-radius: 10px;
+   margin: 10px;
+}
+
+.image-box{
+   display: flex;
+   justify-content: center;
+}
+
+.footer-text{
+   text-align: center;
+   color: white;
+}
+
+.footer-text >h1 {
+   color: tomato;
+   font-family: 'Lobster', cursive;
 }
 
